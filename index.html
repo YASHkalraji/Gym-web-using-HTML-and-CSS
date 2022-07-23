@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project 1 Fitness</title>
+    <style>
+        .left img{
+            width: 100px;
+            filter: invert(100%);
+        }
+
+        body{
+            margin: 0px;
+            padding:0px;
+            background: url('img/gym3.jpg');
+            background-size: 1300px  700px;
+            height: 200px;
+            color: white;
+        }
+        .left{
+            border:3px solid red;
+            display: inline-block;
+            position: relative;
+            right :-40px;
+
+            top:36px;
+            text-align: center;
+
+        }
+        .right{
+            border:3px solid yellow;
+            display: inline-block;
+            position:absolute;
+            top:36px;
+            right:0px;
+            left: 1000px;
+
+        }
+        .mid{
+            border:3px solid yellowgreen;
+            display: block;
+            width:600px;
+            margin:-85px auto;
+            top: 18px;
+        
+
+        }
+        .navbar{
+            display:inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            color: white;
+            font: 50px;
+            padding: 30px ;
+        }
+        .navbar  li a{
+            color: white;
+            text-decoration: none;
+            font-family:cursive ;
+        }
+        .navbar li a:hover, .navbar li a:active{
+            text-decoration: underline;
+            color:greenyellow;
+        }
+        .btn{
+            font-size:larger;
+            font-family:cursive ;
+
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            height: 100px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: greenyellow;
+            text-decoration: underline;
+        }
+        .container{
+            border: 3px solid white;
+            margin : 167px 50px;
+            width:50%;
+            height: 150%;
+            
+
+            padding: 20px 80px;
+           border-radius: 30px;
+            
+        }
+        .form-group{
+            margin: 2px 4px;
+        }
+        .btn{
+            border: 3px solid orangered;
+            padding:2px 60px;
+            height: 50px;
+        }
+        .form-group :hover{
+            background-color: aqua;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 4px;
+            border: 2px  solid greenyellow;
+            margin: auto;
+            border-radius: 6px;
+            font-family: cursive;
+
+        }
+        .container h1{
+            text-align: center;
+
+            font-family: cursive; 
+        }
+        .container botton{
+            display: block;
+            width: 200px;
+            margin: auto;
+            text-align: center;
+
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+    
+
+        <!-- for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <br>
+            YASH KALRA
+
+
+        </div>
+        
+        <!-- for nav bar -->
+        <div class="mid">
+            <div class="navbar"> 
+
+                <ul>
+                    <li> <A href="#">HOME</A></li>
+                    <li> <a href="#">ABOUT</a> </li>
+                    <li> <a href="#">FITNESS</a> </li>
+                    <li> <a href="#"> CONTACT US</a> </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        
+        <!-- for button -->
+        <div class="right">
+            <BUTTon class="btn">Call Us Now</BUTTon>
+            <BUTTon class="btn">Email Us</BUTTon>
+        </div>
+        
+    </header>
+
+
+    <div class="container">
+        <h1> Join The Best Gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" age="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" Gender="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" Locality="" placeholder="Enter Your Locality">
+            </div>
+            <botton class="btn">
+                Submit
+            </botton>
+
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
